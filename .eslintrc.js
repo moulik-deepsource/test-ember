@@ -15,7 +15,8 @@ module.exports = {
   ],
   extends: [
     'eslint:recommended',
-    'plugin:ember/recommended'
+    'plugin:ember/recommended',
+    '@quave/quave'
   ],
   env: {
     browser: true
@@ -42,7 +43,7 @@ module.exports = {
         node: true
       },
       plugins: ['node'],
-      extends: ['plugin:node/recommended'],
+      extends: ['plugin:node/recommended',     '@quave/quave'],
       rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
